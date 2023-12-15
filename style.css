@@ -1,0 +1,125 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, red, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+
+.hero h1 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    color: orange;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+
+.hero h1 span {
+    font-weight: 600;
+    color: rgb(89, 237, 20);
+    font-size: 110px;
+
+}
+
+textarea {
+    max-width: 600px;
+    width: 100%;
+    height: 250px;
+    background: skyblue;
+    color: black;
+    font-size: 15px;
+    border: 0;
+    /* box-shadow: rgb(236, 5, 216), rgb(236, 5, 216); */
+
+    outline: 0;
+    padding: 20px;
+    border-radius: 10px;
+    resize: none;
+    margin-bottom: 30px;
+}
+
+textarea::placeholder {
+    font-size: 16px;
+    color: brown;
+
+}
+
+.row {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    background: greenyellow;
+    color: black;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+button img {
+    width: 16px;
+    margin-right: 10px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero h1 span {
+        font-size: 120px;
+    }
+
+    .textarea {
+        max-width: 500px;
+    }
+
+    .row {
+        max-width: 500px;
+    }
+}
+
+/* Media Query for Larger Screens */
+@media screen and (min-width: 1200px) {
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero h1 span {
+        font-size: 130px;
+    }
+
+    .textarea {
+        max-width: 600px;
+    }
+
+    .row {
+        max-width: 600px;
+    }
+}
